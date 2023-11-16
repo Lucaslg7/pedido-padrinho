@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: azure;
+    border: 0;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Puss-in-Boots.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    padding: 2rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem; 
+}
