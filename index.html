@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aceita Ser Nosso Padrinho?</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <h2 style="text-align: center; color:white; font-size: 3rem; margin-bottom: 4rem;">Você aceita ser nosso padrinho?</h2>
-        <div class="button-container">
-            <button type="button" class="btn" id="sim" onclick="sim()">Sim</button>
-            <button type="button" class="btn" id="nao" onmouseover="desvia()">Não</button>
-        </div>
+      <h2
+        style="
+          text-align: center;
+          color: white;
+          font-size: 3rem;
+          margin-bottom: 4rem;
+        "
+      >
+        Você aceita ser nosso padrinho?
+      </h2>
+      <div class="button-container">
+        <button type="button" class="btn" id="sim" onclick="showPopup()">
+          Sim
+        </button>
+        <button type="button" class="btn" id="nao" onmouseover="desvia()">
+          Não
+        </button>
+      </div>
     </div>
-    <script src="script.js"></script>
-</body>
 
+    <div class="popup" id="popup">
+      <span class="close" onclick="hidePopup()">&times;</span>
+
+      <p>Professor Emanuel</p>
+      <p
+        style="
+          font-size: large;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        "
+      >
+        É uma honra para nós, do 3º ano de Informática, termos o senhor como
+        padrinho da nossa turma. Enfrentamos uma longa jornada juntos, e
+        queríamos ao nosso lado aqueles que estiveram conosco durante toda a
+        caminha e nunca nos abandonaram, aqueles que sempre nos ajudaram e
+        contribuíram não só para a nossa formação acadêmica, mas também para
+        nossa formação enquanto pessoas.
+      </p>
+      <p>
+        Agradecemos ao senhor por tudo, por toda a sua simplicidade, humildade,
+        carinho e amor por cada um de nós, sei que cada um da nossa sala tem
+        muitos motivos para lhe agradacer.
+      </p>
+      <p>
+        Obrigado, Emanuel, obrigado pelo privilégio de ser o nosso padrinho
+        &lt;3
+      </p>
+    </div>
+
+    <script type="module" src="confetti.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
 </html>
